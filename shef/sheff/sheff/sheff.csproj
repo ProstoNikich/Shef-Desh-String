@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{72961CD1-A550-4917-8900-E1761D595574}</ProjectGuid>
+    <ProjectGuid>{D39168C0-A9CD-49ED-954E-5F0E47A3D57C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Shef_Desh_String</RootNamespace>
-    <AssemblyName>Shef-Desh-String</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <RootNamespace>sheff</RootNamespace>
+    <AssemblyName>sheff</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
