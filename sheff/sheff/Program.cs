@@ -6,26 +6,28 @@ using System.Threading.Tasks;
 
 namespace sheff
 {
-    class Program
+    public class Program
     {
-        public static void Shifrator(string stroka)
+        public static string Shifrator(string stroka)
         {
+            string output = "";
             foreach (var c in stroka)
             {
                 int _с = c + 2;
-                char res = Convert.ToChar(_с);
-                Console.Write(res);
+                output += Convert.ToChar(_с);                
             }
+            return output;
         }
 
-        public static void Deshifrator(string stroka)
+        public static string Deshifrator(string stroka)
         {
+            string output = "";
             foreach (var c in stroka)
             {
                 int _с = c - 2;
-                char res = Convert.ToChar(_с);
-                Console.Write(res);
+                output += Convert.ToChar(_с);
             }
+            return output;
         }
 
         static void Main(string[] args)
@@ -37,13 +39,13 @@ namespace sheff
             {
                 Console.WriteLine("Введите строку для зашифровки");
                 strok = Console.ReadLine();
-                Shifrator(strok);
+                Console.WriteLine(Shifrator(strok));
             }
             else if (a == 2)
             {
                 Console.WriteLine("Введите строку для дешифровки");
                 strok = Console.ReadLine();
-                Deshifrator(strok);
+                Console.WriteLine(Deshifrator(strok));
             }
             else Console.WriteLine("Ошибка!");
             Console.ReadKey();
